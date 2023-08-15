@@ -75,7 +75,8 @@ class DataApiView(CreateAPIView):
             num_ratings = num_rr[0].find(name='span').text.split(" ")[0].replace(",", '')
 
         except:
-            return ValidationError('Incorrect url')
+            data = {'message': 'Incorrect url'}
+            return Response(data=data,status=status.HTTP_400_BAD_REQUEST)
 
         scraped_data = {
             'user': request.user.id,
