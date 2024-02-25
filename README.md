@@ -2,12 +2,12 @@
 
 I used django rest framework to create this project , used railways to host my postgres database.
 
--->API that lets users signup and log in through JWT based authentication using email and password
+- API that lets users signup and log in through JWT based authentication using email and password
 
---> Api that takes a Flipkart url as payload, scrapes the below-given
+- Api that takes a Flipkart url as payload, scrapes the below-given
 fields, and saves them in Postgres with proper schema with user info. This works only if a user is logged in, else proper error message is shown.
 
--->Checks if the URL corresponding to the logged-in user is already present in the DB, and return from the DB. If the URL is not present or does not belong to a logged-in user show a proper error message.
+- Checks if the URL corresponding to the logged-in user is already present in the DB, and return from the DB. If the URL is not present or does not belong to a logged-in user show a proper error message.
 
 
 API Endpoints :- 
